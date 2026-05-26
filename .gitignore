@@ -1,0 +1,17 @@
+# Секрети та конфігурація
+.env
+authenticated_users.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Claude Code
+CLAUDE.md

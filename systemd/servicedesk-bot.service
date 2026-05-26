@@ -1,0 +1,15 @@
+[Unit]
+Description=ServiceDesk Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+User=YOUR_LINUX_USER
+WorkingDirectory=/path/to/servicedesk-chat-bot
+ExecStart=/path/to/servicedesk-chat-bot/venv/bin/python bot.py
+Restart=on-failure
+RestartSec=5
+EnvironmentFile=/path/to/servicedesk-chat-bot/.env
+
+[Install]
+WantedBy=multi-user.target
